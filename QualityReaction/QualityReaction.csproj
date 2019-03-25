@@ -132,7 +132,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CasesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PlansController.cs" />
+    <Compile Include="Controllers\StepsController.cs" />
     <Compile Include="DB\QualityReactionContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -193,6 +196,21 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Steps\Create.cshtml" />
+    <Content Include="Views\Steps\Delete.cshtml" />
+    <Content Include="Views\Steps\Details.cshtml" />
+    <Content Include="Views\Steps\Edit.cshtml" />
+    <Content Include="Views\Steps\Index.cshtml" />
+    <Content Include="Views\Cases\Create.cshtml" />
+    <Content Include="Views\Cases\Delete.cshtml" />
+    <Content Include="Views\Cases\Details.cshtml" />
+    <Content Include="Views\Cases\Edit.cshtml" />
+    <Content Include="Views\Cases\Index.cshtml" />
+    <Content Include="Views\Plans\Create.cshtml" />
+    <Content Include="Views\Plans\Delete.cshtml" />
+    <Content Include="Views\Plans\Details.cshtml" />
+    <Content Include="Views\Plans\Edit.cshtml" />
+    <Content Include="Views\Plans\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
