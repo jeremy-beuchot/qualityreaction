@@ -1,7 +1,10 @@
-﻿namespace QualityReaction.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace QualityReaction.Models
 {
     public class RunStep
     {
+        [Key]
         public virtual long Id { get; set; }
         public virtual Step Step { get; set; }
         public virtual Status Status { get; set; }

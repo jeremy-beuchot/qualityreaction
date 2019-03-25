@@ -1,7 +1,10 @@
-﻿namespace QualityReaction.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace QualityReaction.Models
 {
     public class Project
     {
+        [Key]
         public virtual long Id { get; set; }
         public virtual string Name { get; set; }
         public virtual string Description { get; set; }
