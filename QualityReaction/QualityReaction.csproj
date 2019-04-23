@@ -45,12 +45,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -136,6 +130,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Case.cs" />
+    <Compile Include="Models\CaseStep.cs" />
+    <Compile Include="Models\Plan.cs" />
+    <Compile Include="Models\PlanCase.cs" />
+    <Compile Include="Models\Project.cs" />
+    <Compile Include="Models\Run.cs" />
+    <Compile Include="Models\RunCase.cs" />
+    <Compile Include="Models\RunPlan.cs" />
+    <Compile Include="Models\RunStep.cs" />
+    <Compile Include="Models\Status.cs" />
+    <Compile Include="Models\Step.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Version.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -187,7 +194,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -201,16 +207,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DataBaseService\DataBaseService.csproj">
-      <Project>{28f9ddd3-3986-4a34-a991-34d281a89165}</Project>
-      <Name>DataBaseService</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Models\Models.csproj">
-      <Project>{a789fa3a-fe76-46fe-87e2-d456f3ce01e8}</Project>
-      <Name>Models</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
