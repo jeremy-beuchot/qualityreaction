@@ -1,11 +1,13 @@
 ﻿namespace QualityReaction.Models
 {
-    public class User
+    public class User : AbstractDatabaseEntity
     {
-        public virtual long Id { get; set; }
         public virtual string FirstName { get; set; }
+
         public virtual string LastName { get; set; }
+
         public virtual string ShortName { get; set; }
+
         public virtual string FullName
         {
             get

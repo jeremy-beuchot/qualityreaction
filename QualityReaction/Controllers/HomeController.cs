@@ -1,11 +1,15 @@
-﻿using System.Web.Mvc;
+﻿using QualityReaction.DataBaseService;
+using QualityReaction.Models;
+using System.Web.Mvc;
 
 namespace QualityReaction.Controllers
 {
     public class HomeController : Controller
     {
         public ActionResult Index()
-        {
+        {            
+            var ps = DbService.FindAll<Project>();
+
             return View();
         }
 
